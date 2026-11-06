@@ -11,7 +11,9 @@
 // Any number of examples works. Keep a comma after every line.
 // ---------------------------------------------------------------
 window.THETA_GALLERY = [
-  { before: "img/gallery/ex1_before.jpg", afters: [ { label: "Day", src: "img/gallery/ex1_after.jpg" }, { label: "Night", src: "img/gallery/ex1_night.jpg" } ], caption: "From a model view" },
-  { before: "img/gallery/ex2_before.jpg", after: "img/gallery/ex2_after.jpg", caption: "From a SketchUp view" },
-  { before: "img/gallery/ex3_before.jpg", after: "img/gallery/ex3_after.jpg", caption: "From any image file" }
+  { before: "img/gallery/ex1_before.jpg", afters: [ { label: "Day", src: "img/gallery/ex1_after.jpg" }, { label: "Night", src: "img/gallery/ex1_night.jpg" } ], caption: "Cityscape" },
+  { before: "img/gallery/ex2_before.jpg", afters: [ { label: "Day", src: "img/gallery/ex2_after.jpg" }, { label: "Night", src: "img/gallery/ex2_night.jpg" } ], caption: "Landscape" },
+  { before: "img/gallery/ex3_before.jpg", afters: [ { label: "Day", src: "img/gallery/ex3_after.jpg" }, { label: "Night", src: "img/gallery/ex3_night.jpg" } ], caption: "Interior" },
+  { before: "img/gallery/ex4_before.jpg", afters: [ { label: "Day", src: "img/gallery/ex4_after.jpg" }, { label: "Night", src: "img/gallery/ex4_night.jpg" } ], caption: "Interior" },
+  { before: "img/gallery/ex5_before.jpg", after: "img/gallery/ex5_after.jpg", caption: "Car" }
 ];
