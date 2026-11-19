@@ -1,19 +1,21 @@
 
-:root{--fs:13.5px;--bg:#161c25;--line:#2a3340;--text:#e6ebf2;--muted:#a9b4c3;--blue:#6aa5e3;--orange:#f5a300;--hh:92px;--lw:360px;--rw:270px;--gp:48px}
+:root{--fs:12.5px;--bg:#161c25;--line:#2a3340;--text:#e6ebf2;--muted:#a9b4c3;--blue:#6aa5e3;--orange:#f5a300;--hh:92px;--lw:360px;--rw:270px;--gp:48px}
 *{box-sizing:border-box}html{scroll-padding-top:calc(var(--hh) + 16px)}body{margin:0;background:var(--bg);color:var(--text);font:var(--fs)/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
 a{color:var(--blue)}
 header{position:fixed;top:0;left:0;right:0;height:var(--hh);background:var(--bg);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:0;padding:0 32px;z-index:5}
 header .logo{width:calc(var(--lw) + var(--gp) - 32px);flex:none}header .logo img{height:46px;display:block}
 header h1{font-size:26px;font-weight:500;margin:0;letter-spacing:-.01em;line-height:1.25}
-header p{margin:2px 0 0;color:var(--muted);font-size:15px}
+header p{margin:2px 0 0;color:var(--muted);font-size:14px}
 .right{position:fixed;top:var(--hh);bottom:0;right:0;width:var(--rw);border-left:1px solid var(--line);padding:26px 26px;display:flex;flex-direction:column;overflow:auto;background:var(--bg)}
 .btn{display:block;text-align:center;text-decoration:none;font-weight:600;font-size:var(--fs);padding:13px 16px;border-radius:8px;background:var(--orange);color:#1a1405}
 .btn:hover,.btn:focus-visible{filter:brightness(1.08)}
+.btn.soon{background:none;border:1.5px solid var(--orange);color:var(--orange);cursor:default;filter:none!important}
 .small{font-size:var(--fs);color:var(--muted);text-align:center;margin:12px 0 0}
 .req{margin-top:24px;font-size:var(--fs);line-height:1.55;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
 .req b{color:var(--text);font-weight:600}
+.nodata{flex-basis:100%;width:100%;margin:10px 0 0;text-align:center;font-size:var(--fs);color:var(--muted);line-height:1.4}
 .legal{margin-top:auto;font-size:var(--fs);display:flex;gap:6px 14px;justify-content:center;flex-wrap:wrap;padding-top:20px}
-.legal .em{flex-basis:100%;text-align:center}.legal a{color:var(--text);text-decoration:none;font-weight:500}.legal a:hover{text-decoration:underline}
+.legal .em,.legal .test{flex-basis:100%;text-align:center}.legal .test{color:var(--orange);font-weight:600}.legal .test:hover{text-decoration:underline}.legal a{color:var(--text);text-decoration:none;font-weight:500}.legal a:hover{text-decoration:underline}
 .layout{margin:var(--hh) var(--rw) 0 0;display:grid;grid-template-columns:var(--lw) minmax(0,1fr);align-items:start;background:linear-gradient(var(--line),var(--line)) var(--lw) 0/1px 100% no-repeat}
 .left{padding:30px 30px 60px}.intro{margin:0 0 22px;font-size:var(--fs);line-height:1.6;color:#d5dce7}
 .facts{list-style:none;margin:0 0 32px;padding:0}
@@ -26,6 +28,7 @@ header p{margin:2px 0 0;color:var(--muted);font-size:15px}
 .sig{color:var(--muted);font-size:var(--fs);margin-top:6px;line-height:1.5}
 .gallery{padding:30px var(--gp) 60px;min-width:0}.gallery .in{max-width:none}
 .gallery h2{font-size:var(--fs);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 16px}
+.gallery .cap{margin:-6px 0 16px;color:var(--muted);font-size:var(--fs);line-height:1.4}
 figure{margin:0 0 30px}
 figcaption{font-size:var(--fs);color:var(--muted);margin-top:10px}
 .cmp{position:relative;background:#10151c;border-radius:10px;overflow:hidden;border:1px solid var(--line);aspect-ratio:var(--ar,2/1);touch-action:pan-y;cursor:ew-resize;user-select:none;-webkit-user-select:none;outline-offset:3px;--p:50%}
@@ -48,13 +51,15 @@ figcaption{font-size:var(--fs);color:var(--muted);margin-top:10px}
 .doc p.item{padding-left:2.6em;text-indent:-2.6em}
 .doc p.sub{padding-left:4.6em;text-indent:-2em}
 .doc .back{display:inline-block;margin-bottom:18px;text-decoration:none;font-size:var(--fs)}.doc .totop{text-align:left;padding:26px 0 0}
-.doc .legal{justify-content:flex-start;margin-top:40px;border-top:1px solid var(--line)}.doc .legal .em{flex-basis:auto;text-align:left}
+.doc .legal{justify-content:flex-start;margin-top:40px;border-top:1px solid var(--line)}.doc .legal .em{flex-basis:auto;text-align:left}.doc .legal .test{text-align:left}
+.note a{color:var(--blue)}
+.doc table{width:100%;border-collapse:collapse;margin:14px 0 6px}.doc th,.doc td{border:1px solid var(--line);padding:10px 14px;text-align:left;font-size:var(--fs);vertical-align:top}.doc th{color:var(--muted);font-weight:600;background:#1b2330}.doc td.n{white-space:nowrap}.doc td b{font-size:14px}.doc td small,.doc th small{display:block;color:var(--muted);font-size:11.5px;margin-top:2px}.doc .tw{overflow-x:auto}
 @media(max-width:1180px){
  header{position:static;height:auto;flex-direction:column;align-items:flex-start;gap:12px;padding:22px;border:0}
  header h1{font-size:24px}
  header .logo{width:auto}
  .right{position:static;width:auto;border:0;padding:4px 22px 22px;overflow:visible}
- .right .legal{display:none}
+ .right .legal,.right .nodata{display:none}
  .layout{margin:0;display:flex;flex-direction:column;align-items:stretch}
  .gallery,.gallery .in,.cmp{width:100%}
  .left{display:contents}
@@ -70,3 +75,16 @@ figcaption{font-size:var(--fs);color:var(--muted);margin-top:10px}
  .cmp{touch-action:pan-y}
 }
 @media(prefers-reduced-motion:no-preference){.btn{transition:filter .15s}}
+.doc p.fn{color:var(--muted);margin:0 0 4px}
+/* gallery tabs */
+.gtabs{position:sticky;top:var(--hh);z-index:3;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;padding:10px 0;background:var(--bg);border-bottom:1px solid var(--line)}
+.gtabs[hidden]{display:none}
+.gtabs button{font:inherit;font-size:var(--fs);color:var(--muted);background:none;border:1px solid var(--line);border-radius:20px;padding:5px 16px;cursor:pointer;white-space:nowrap}
+.gtabs button:hover{color:var(--text);border-color:#3a4656}
+.gtabs button[aria-selected=true]{color:#0e1824;background:var(--blue);border-color:var(--blue);font-weight:600}
+.gtabs button:focus-visible,.modes button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+#gallery:focus{outline:none}
+.gmsg{color:var(--muted);font-size:var(--fs);margin:0 0 30px}
+@media(max-width:1180px){.gtabs{top:0;gap:6px}.gtabs button{padding:5px 13px}}
+/* fit each comparison image inside the visible window on desktop (added 2026-11-18; remove this block to undo) */
+@media(min-width:1181px){.cmp{width:min(100%,1600px,calc((100vh - var(--hh) - 160px) * (var(--ar,2/1))));margin-left:auto;margin-right:auto}.gallery figure .modes{justify-content:center}.gallery figcaption{text-align:center}}

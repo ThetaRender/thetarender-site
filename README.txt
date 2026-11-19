@@ -1,8 +1,9 @@
 THETA Render website - how to change the gallery
 ==============================================
-1. Put the new pictures in the folder  img/gallery  (JPG or PNG; about 1600 px wide is plenty).
-   Use the same size and framing for the "before" and "after" picture of one example.
-2. Open  js/gallery.js  with Notepad and add, change or delete lines in the list.
-   Each example is one line (see the note in js/gallery.js for the Day / Night button option). Keep a comma after every line except the last one.
-3. Upload the changed files to the GitHub repository (Add file > Upload files). The site updates in a minute or two.
-To remove an example: delete its line. To reorder: move the lines.
+The gallery is built from the picture files in  img/gallery  - no code to edit.
+1. Add or delete pictures in  img/gallery , named  <id>_<A|B|C>_<caption>.jpg  (e.g. ex5_A_Villa.jpg, ex5_B_Villa.jpg).
+   Use the same size and framing for the A, B and C picture of one example.
+2. Choose the Highlights in  img/gallery/highlights.txt  (e.g.  sk18, ex5, in4).
+3. Upload the changed files to the GitHub repository (Add file > Upload files). GitHub rebuilds
+   img/gallery/manifest.json by itself and the site updates in a minute or two.
+Full details and how to preview on the PC: img/gallery/README.txt

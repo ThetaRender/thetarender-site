@@ -1,0 +1,4 @@
+# Highlights tab: the ids to show, in this order (one per line or comma separated).
+# Lines starting with # are ignored. Unknown ids are skipped.
+# If this file is missing or empty, Highlights shows the first example of each tab.
+ex13, in5, ob7, sk30, ex14, sk31, ex15, sk32
